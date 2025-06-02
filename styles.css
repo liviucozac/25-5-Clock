@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+body.light-mode {
+  background-color: #ffffff;
+  color: black;
+}
+
+#root {
+  text-align: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  max-width: 400px;
+  width: 90%;
+}
+
+button {
+  background-color: #1f1f1f;
+  color: #fff;
+  border: 2px solid #444;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #333;
+  border-color: #888;
+}
+
+.length-section {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.length-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.length-control label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.length-control .value {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+#timer-label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#time-left {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.control-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.inline1, .inline2 {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.break, .session, {
+  border: 1px solid #4f4f4f;
+  padding: 10px 5px;
+  margin: 10px 0;
+}
+
+#break-label, #break-length, .break-text {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 1px;
+}
+
+#session-label, #session-length, .session-text {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 1px;
+}
+
+.innerone, .innertwo {
+  border: 1px solid #404040;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px
+}
+
+/* light mode start */
+
+body.light-mode #root {
+  background-color: #f0f0f0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode button {
+  background-color: #e0e0e0;
+  color: #000;
+  border: 2px solid #999;
+}
+
+body.light-mode button:hover {
+  background-color: #d5d5d5;
+  border-color: #666;
+}
+
+body.light-mode .break,
+body.light-mode .session {
+  border-color: #bbb;
+}
+
+body.light-mode #time-left {
+  color: #222;
+}
+
+/* light mode end */
+
